@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.body{
+    background-image:url("https://wallpapers.com/images/hd/snake-game-1920-x-1080-background-cxaoo0lzkgvdopup.jpg");
+    min-height: 100vh;
+    width: 100%;
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(114, 222, 114),rgb(222, 222, 121));
+    width: 50vw;
+    height: 80vh;
+    display: grid;
+    position: relative;
+    border-radius: 5px;
+    top: 10px;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+.head{
+    background-image: url("snake-Photoroom.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    rotate: 180deg;
+   
+}
+.snake{
+    background-color: rgb(128, 255, 128);
+    border: 1px solid;
+    border-radius: 5px;
+}
+.food{
+    aspect-ratio: 1/1;
+    background-image: url("apple-Photoroom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50%;
+}
